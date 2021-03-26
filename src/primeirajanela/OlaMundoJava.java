@@ -36,6 +36,11 @@ public class OlaMundoJava extends javax.swing.JFrame {
         btnClick.setForeground(new java.awt.Color(51, 102, 255));
         btnClick.setText("clique em mim");
         btnClick.setActionCommand("");
+        btnClick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClickActionPerformed(evt);
+            }
+        });
 
         lblMensagem.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         lblMensagem.setForeground(new java.awt.Color(255, 0, 0));
@@ -68,6 +73,10 @@ public class OlaMundoJava extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClickActionPerformed
+         lblMensagem.setText("Ola, M  undo!");
+    }//GEN-LAST:event_btnClickActionPerformed
 
     /**
      * @param args the command line arguments
