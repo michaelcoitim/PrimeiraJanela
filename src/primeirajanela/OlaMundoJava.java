@@ -27,17 +27,43 @@ public class OlaMundoJava extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnClick = new javax.swing.JButton();
+        lblMensagem = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        btnClick.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btnClick.setForeground(new java.awt.Color(51, 102, 255));
+        btnClick.setText("clique em mim");
+        btnClick.setActionCommand("");
+
+        lblMensagem.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        lblMensagem.setForeground(new java.awt.Color(255, 0, 0));
+        lblMensagem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMensagem.setText("Mensagen ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addComponent(lblMensagem, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(116, 116, 116)
+                        .addComponent(btnClick, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(104, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(35, Short.MAX_VALUE)
+                .addComponent(lblMensagem)
+                .addGap(44, 44, 44)
+                .addComponent(btnClick, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35))
         );
 
         pack();
@@ -79,5 +105,7 @@ public class OlaMundoJava extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnClick;
+    private javax.swing.JLabel lblMensagem;
     // End of variables declaration//GEN-END:variables
 }
