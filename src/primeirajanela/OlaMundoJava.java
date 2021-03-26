@@ -75,7 +75,7 @@ public class OlaMundoJava extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClickActionPerformed
-         lblMensagem.setText("Ola, M  undo!");
+         lblMensagem.setText("Ola, Mundo!");
     }//GEN-LAST:event_btnClickActionPerformed
 
     /**
